@@ -14,7 +14,7 @@ define(
                 ,   editor:                     "Editor:"
                 ,   editors:                    "Editors:"
                 ,   author:                     "Author:"
-                ,   authors:                    "Authors:"
+                ,   authors:                    "Former editors:"
                 ,   abstract:                   "Abstract"
                 ,   sotd:                       "Status of This Document"
                 ,   status_at_publication:      "This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this technical report can be found in the <a href='https://www.w3.org/TR/'>W3C technical reports index</a> at https://www.w3.org/TR/."

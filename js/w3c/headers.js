@@ -141,7 +141,10 @@ define(
                 } else {
                   ret += "<dd class='p-author h-card vcard'" + editorid + ">";
                 }
-                if (p.url) {
+                if (p.mailto) {
+                  ret += "<a class='u-url url p-name fn' href='mailto:" + p.mailto + "'>" + p.name + "</a>";
+                }
+                else if (p.url) {
                     if (this.doRDFa) {
                         ret += "<meta" + rn + " content='" + p.name + "'><a class='u-url url p-name fn' " + rpu + " href='" + p.url + "'>" + p.name + "</a>";
                     }
@@ -151,12 +154,10 @@ define(
                     ret += "<span" + rn + " class='p-name fn'>" + p.name + "</span>";
                 }
                 if (p.company) {
-                    ret += ", ";
+                    ret += " (";
                     if (p.companyURL) ret += "<a" + rwu + " class='p-org org h-org h-card' href='" + p.companyURL + "'>" + p.company + "</a>";
                     else ret += p.company;
-                }
-                if (p.mailto) {
-                    ret += ", <span class='ed_mailto'><a class='u-email email' " + rm + " href='mailto:" + p.mailto + "'>" + p.mailto + "</a></span>";
+                    ret += ")";
                 }
                 if (p.note) ret += " (" + p.note + ")";
                 if (p.extras) {

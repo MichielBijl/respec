@@ -45,6 +45,7 @@
         <dd><a href='{{prevED}}'>{{prevED}}</a></dd>
       {{/if}}
     {{/unless}}
+    Hallo
     <dt>{{#if multipleEditors}}{{l10n.editors}}{{else}}{{l10n.editor}}{{/if}}</dt>
     {{showPeople "Editor" editors}}
     {{#if authors}}
@@ -91,9 +92,9 @@
   {{#if alternateFormats}}
     <p>
       {{#if multipleAlternates}}
-        This document is also available in these non-normative formats: 
+        This document is also available in these non-normative formats:
       {{else}}
-        This document is also available in this non-normative format: 
+        This document is also available in this non-normative format:
       {{/if}}
       {{{alternatesHTML}}}
     </p>
@@ -104,7 +105,7 @@
     the Contributors to the {{title}} Specification, published by the
     <a href='{{wgURI}}'>{{wg}}</a> under the
     {{#if isCGFinal}}
-      <a href="https://www.w3.org/community/about/agreements/fsa/">W3C Community Final Specification Agreement (FSA)</a>. 
+      <a href="https://www.w3.org/community/about/agreements/fsa/">W3C Community Final Specification Agreement (FSA)</a>.
       A human-readable <a href="https://www.w3.org/community/about/agreements/fsa-deed/">summary</a> is available.
     {{else}}
       <a href="https://www.w3.org/community/about/agreements/cla/">W3C Community Contributor License Agreement (CLA)</a>.
